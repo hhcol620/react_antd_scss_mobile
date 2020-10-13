@@ -1,0 +1,28 @@
+.borderBottom_x1{
+  position: relative;
+  box-sizing: border-box;
+}
+
+.borderBottom_x1::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 200%;
+  border-bottom: 1px solid #eaeaec;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  pointer-events: none;  // 避免被点击的  有点透传的感觉  直接点中下面的元素
+  box-sizing: border-box;
+
+  @media screen and (min-device-pixel-ratio:3),(-webkit-min-device-pixel-ratio:3){
+    width: 300%;
+    height: 300%;
+    -webkit-transform: scale(0.33);
+    transform: scale(0.33);
+  }
+
+}

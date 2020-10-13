@@ -6,18 +6,31 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "compression-webpack-plugin": "^6.0.3",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.6.0",
+    "http-proxy-middleware": "^1.0.6",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.2",
+    "progress-bar-webpack-plugin": "^2.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "webpack-bundle-analyzer": "^3.9.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "build:view": "cross-env NODE_ENV=production GENERATE_SOURCEMAP=false ANALYZER=true react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "no-unused-vars": "off",
+      "jsx-a11y/anchor-is-valid": "off"
+    }
   },
   "browserslist": {
     "production": [
@@ -30,5 +43,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.1",
+    "customize-cra": "^1.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.4",
+    "react-app-rewired": "^2.1.6"
   }
 }
