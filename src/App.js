@@ -5,15 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>hello word --- react</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>hello world --- react 可以兼容</p>
       </header>
     </div>
   )
