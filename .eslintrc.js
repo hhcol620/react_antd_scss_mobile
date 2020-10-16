@@ -29,6 +29,7 @@ module.exports = {
     'jsx-a11y/anchor-is-valid': 'off',
     'eol-last': [2, 'always'],
     'react/prop-types': 'off',
-    'eslint-disable': 0 // 使用未生明变量
+    'eslint-disable': 0, // 使用未生明变量
+    'no-extra-semi': 0
   }
 }

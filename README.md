@@ -5,3 +5,7 @@
 * webpack 打包 
 
 * axios请求后台数据
+
+# 文件介绍
+ src->index.js   这个文件导入App组件 引入全局的css 和一些js常用工具方法
+ src->App.js  这个文件配置redux (Provider) react-router-dom(控制路由)

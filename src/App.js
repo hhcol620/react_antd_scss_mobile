@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>hello world - react-antd_scss_mobile 可以兼容</p>
+        <span>hello</span>
       </header>
     </div>
   )
