@@ -25,6 +25,7 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "build:view": "cross-env NODE_ENV=production GENERATE_SOURCEMAP=false ANALYZER=true react-app-rewired build",
+    "create:page": "npx hygen mygen with-prompt",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
@@ -54,6 +55,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.21.4",
+    "hygen": "^6.0.4",
     "react-app-rewired": "^2.1.6"
   }
 }
