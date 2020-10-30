@@ -70,7 +70,7 @@ function reqHandle(method, url, data) {
 /**
  * @params : url  连接url 去掉两端的/
  * @return :
- * @description :
+ * @description :  拼接url
  * @date : 2020-10-20 10:23
  * @author : hhcol_JS
  */
